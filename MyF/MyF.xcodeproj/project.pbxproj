@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2215FEF72066708E003305B9 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2215FEF62066708E003305B9 /* ScannerVC.swift */; };
 		22DED4F2205976E80056644A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED4F1205976E80056644A /* AppDelegate.swift */; };
 		22DED4F4205976E80056644A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED4F3205976E80056644A /* ViewController.swift */; };
 		22DED4F7205976E80056644A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DED4F5205976E80056644A /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1B4B92C2E6D864AA96D09AC4 /* Pods-MyF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyF.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyF/Pods-MyF.release.xcconfig"; sourceTree = "<group>"; };
+		2215FEF62066708E003305B9 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		22DED4EE205976E80056644A /* MyF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DED4F1205976E80056644A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22DED4F3205976E80056644A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2215FEF52066705B003305B9 /* ScanView */ = {
+			isa = PBXGroup;
+			children = (
+				2215FEF62066708E003305B9 /* ScannerVC.swift */,
+			);
+			path = ScanView;
+			sourceTree = "<group>";
+		};
 		22DED4E5205976E80056644A = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +229,7 @@
 		2FA8794E206382F400A048CE /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				2215FEF52066705B003305B9 /* ScanView */,
 				2FA8794F2063830C00A048CE /* EventHub */,
 			);
 			path = Thirdparty;
@@ -403,6 +414,7 @@
 				2FA8794720635C1000A048CE /* DataBaseQuery+Rx.swift in Sources */,
 				2FA8794920635C1000A048CE /* FIRBaseModel.swift in Sources */,
 				22DED50C20598E4C0056644A /* AppColor.swift in Sources */,
+				2215FEF72066708E003305B9 /* ScannerVC.swift in Sources */,
 				2FA8794620635C1000A048CE /* FIRBaseRealtime+Rx.swift in Sources */,
 				2FA8794D206364A600A048CE /* AppInitializeManager.swift in Sources */,
 			);
