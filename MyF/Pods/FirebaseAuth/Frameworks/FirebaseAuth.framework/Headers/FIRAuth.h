@@ -114,14 +114,6 @@ typedef void (^FIRProviderQueryCallback)(NSArray<NSString *> *_Nullable provider
                                          NSError *_Nullable error)
     NS_SWIFT_NAME(ProviderQueryCallback);
 
-/** @typedef FIRSignInMethodQueryCallback
-    @brief The type of block invoked when a list of sign-in methods for a given email address is
-        requested.
- */
-typedef void (^FIRSignInMethodQueryCallback)(NSArray<NSString *> *_Nullable,
-                                             NSError *_Nullable)
-    NS_SWIFT_NAME(SignInMethodQueryCallback);
-
 /** @typedef FIRSendPasswordResetCallback
     @brief The type of block invoked when sending a password reset email.
 
@@ -130,12 +122,6 @@ typedef void (^FIRSignInMethodQueryCallback)(NSArray<NSString *> *_Nullable,
  */
 typedef void (^FIRSendPasswordResetCallback)(NSError *_Nullable error)
     NS_SWIFT_NAME(SendPasswordResetCallback);
-
-/** @typedef FIRSendSignInLinkToEmailCallback
-    @brief The type of block invoked when sending an email sign-in link email.
- */
-typedef void (^FIRSendSignInLinkToEmailCallback)(NSError *_Nullable error)
-    NS_SWIFT_NAME(SendSignInLinkToEmailCallback);
 
 /** @typedef FIRConfirmPasswordResetCallback
     @brief The type of block invoked when performing a password reset.
@@ -203,10 +189,6 @@ typedef NS_ENUM(NSInteger, FIRActionCodeOperation) {
 
     /** Action code for recover email operation. */
     FIRActionCodeOperationRecoverEmail = 3,
-
-    /** Action code for email link operation. */
-    FIRActionCodeOperationEmailLink = 4,
-
 
 } NS_SWIFT_NAME(ActionCodeOperation);
 
@@ -315,24 +297,6 @@ NS_SWIFT_NAME(Auth)
 - (void)fetchProvidersForEmail:(NSString *)email
                     completion:(nullable FIRProviderQueryCallback)completion;
 
-/** @fn fetchSignInMethodsForEmail:completion:
-    @brief Fetches the list of all sign-in methods previously used for the provided email address.
-
-    @param email The email address for which to obtain a list of sign-in methods.
-    @param completion Optionally; a block which is invoked when the list of sign in methods for the
-        specified email address is ready or an error was encountered. Invoked asynchronously on the
-        main thread in the future.
-
-    @remarks Possible error codes:
-
-        + `FIRAuthErrorCodeInvalidEmail` - Indicates the email address is malformed.
-
-    @remarks See @c FIRAuthErrors for a list of error codes that are common to all API methods.
- */
-
-- (void)fetchSignInMethodsForEmail:(NSString *)email
-                        completion:(nullable FIRSignInMethodQueryCallback)completion;
-
 /** @fn signInWithEmail:password:completion:
     @brief Signs in using an email address and password.
 
@@ -357,30 +321,6 @@ NS_SWIFT_NAME(Auth)
 - (void)signInWithEmail:(NSString *)email
                password:(NSString *)password
              completion:(nullable FIRAuthResultCallback)completion;
-
-/** @fn signInWithEmail:link:completion:
-    @brief Signs in using an email address and email sign-in link.
-
-    @param email The user's email address.
-    @param link The email sign-in link.
-    @param completion Optionally; a block which is invoked when the sign in flow finishes, or is
-        canceled. Invoked asynchronously on the main thread in the future.
-
-    @remarks Possible error codes:
-
-        + `FIRAuthErrorCodeOperationNotAllowed` - Indicates that email and email sign-in link
-            accounts are not enabled. Enable them in the Auth section of the
-            Firebase console.
-        + `FIRAuthErrorCodeUserDisabled` - Indicates the user's account is disabled.
-        + `FIRAuthErrorCodeInvalidEmail` - Indicates the email address is invalid.
-
-
-    @remarks See `FIRAuthErrors` for a list of error codes that are common to all API methods.
- */
-
-- (void)signInWithEmail:(NSString *)email
-                   link:(NSString *)link
-             completion:(nullable FIRAuthDataResultCallback)completion;
 
 /** @fn signInAndRetrieveDataWithEmail:password:completion:
     @brief Signs in using an email address and password.
@@ -714,19 +654,6 @@ NS_SWIFT_NAME(Auth)
                  actionCodeSettings:(FIRActionCodeSettings *)actionCodeSettings
                          completion:(nullable FIRSendPasswordResetCallback)completion;
 
-/** @fn sendSignInLinkToEmail:actionCodeSettings:completion:
-    @brief Sends a sign in with email link to provided email address.
-
-    @param email The email address of the user.
-    @param actionCodeSettings An @c FIRActionCodeSettings object containing settings related to
-        handling action codes.
-    @param completion Optionally; a block which is invoked when the request finishes. Invoked
-        asynchronously on the main thread in the future.
- */
-- (void)sendSignInLinkToEmail:(NSString *)email
-           actionCodeSettings:(FIRActionCodeSettings *)actionCodeSettings
-                   completion:(nullable FIRSendSignInLinkToEmailCallback)completion;
-
 /** @fn signOut:
     @brief Signs out the current user.
 
@@ -744,14 +671,6 @@ NS_SWIFT_NAME(Auth)
 
  */
 - (BOOL)signOut:(NSError *_Nullable *_Nullable)error;
-
-/** @fn isSignInWithEmailLink
-    @brief Checks if link is an email sign-in link.
-
-    @param link The email sign-in link.
-    @return @YES when the link passed matches the expected format of an email sign-in link.
- */
-- (BOOL)isSignInWithEmailLink:(NSString *)link;
 
 /** @fn addAuthStateDidChangeListener:
     @brief Registers a block as an "auth state did change" listener. To be invoked when:
