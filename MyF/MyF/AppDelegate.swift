@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         EventHub.addObservation(observer: self, thread: Thread.main) { (hubType:AppInitializeEventType) in
             if hubType.isSuccess {
-
+                
             }
          }
 

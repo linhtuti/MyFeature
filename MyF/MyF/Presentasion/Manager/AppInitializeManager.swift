@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import Firebase
 import CocoaLumberjack
 
 class AppInitializeManager {
@@ -17,14 +18,16 @@ class AppInitializeManager {
     fileprivate var initialized = false
 
     func prepare(_ application: UIApplication) {
-        let listInit:[Task] = [DDLogInit()]
+        let listInit:[Task] = [DDLogInit(),
+                               RealmInit(),
+                               FirInit()]
 
         var completed = 0
         var errorCnt = 0
 
         Observable<Bool>.create { observer in
             listInit.forEach({ (task) in
-                task.run(obsever: observer)
+                task.run(observer: observer)
             })
 
             return Disposables.create()
@@ -43,17 +46,24 @@ class AppInitializeManager {
 
 
 protocol Task {
-    func run(obsever: AnyObserver<Bool>)
+    func run(observer: AnyObserver<Bool>)
 }
 
 class DDLogInit: Task {
-    func run(obsever: AnyObserver<Bool>) {
+    func run(observer: AnyObserver<Bool>) {
         #if DEBUG
             DDLog.add(DDTTYLogger.sharedInstance, with: .debug)
         #else
             DDLog.add(DDTTYLogger.sharedInstance, with: .error)
         #endif
-        obsever.onNext(true)
+        observer.onNext(true)
+    }
+}
+
+class RealmInit: Task{
+    func run(observer: AnyObserver<Bool>) {
+        RealmDao.realmInit()
+        observer.onNext(true)
     }
 }
 
@@ -61,5 +71,15 @@ class AppInitializeEventType: EventType {
     var isSuccess: Bool!
     init(success: Bool) {
         isSuccess = success
+    }
+}
+
+class FirInit: Task {
+    func run(observer: AnyObserver<Bool>) {
+        if let path = Bundle.main.path(forResource: Const.PATH_GOOGLE_CONFIG, ofType: "plist"), let frBaseOption = FirebaseOptions.init(contentsOfFile: path) {
+            FirebaseApp.configure(options: frBaseOption)
+            
+            observer.onNext(true)
+        }
     }
 }

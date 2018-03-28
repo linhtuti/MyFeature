@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222FA6B22068162300C32BD0 /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FA6B12068162300C32BD0 /* LoginEntity.swift */; };
+		222FA6B620681F9100C32BD0 /* RealmDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FA6B520681F9100C32BD0 /* RealmDao.swift */; };
+		2233F75420675C77006D5579 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F75320675C77006D5579 /* AppDIContainer.swift */; };
+		2233F75720675F3C006D5579 /* OAuthRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F75620675F3C006D5579 /* OAuthRepos.swift */; };
+		2233F75C20676CE8006D5579 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F75820676CE8006D5579 /* AppUtils.swift */; };
+		2233F75D20676CE8006D5579 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F75920676CE8006D5579 /* DateUtils.swift */; };
+		2233F75E20676CE8006D5579 /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F75A20676CE8006D5579 /* JSONUtils.swift */; };
+		2233F75F20676CE8006D5579 /* FirStorageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F75B20676CE8006D5579 /* FirStorageUtils.swift */; };
+		2233F767206772CD006D5579 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F766206772CD006D5579 /* ApiResult.swift */; };
+		2233F76920678549006D5579 /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F76820678549006D5579 /* AppKey.swift */; };
+		2233F76B20678635006D5579 /* OAuthTokenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F76A20678635006D5579 /* OAuthTokenEntity.swift */; };
+		2233F76D206786D9006D5579 /* VoidEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F76C206786D9006D5579 /* VoidEntity.swift */; };
+		2233F76F2067878A006D5579 /* OAuthReposImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2233F76E2067878A006D5579 /* OAuthReposImpl.swift */; };
+		226AAA29206958F7008AA6A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 226AAA28206958F7008AA6A6 /* GoogleService-Info.plist */; };
+		226AAA2B20695F0B008AA6A6 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AAA2A20695F0B008AA6A6 /* Const.swift */; };
+		226AAA2D20696762008AA6A6 /* FirCustomFokenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AAA2C20696762008AA6A6 /* FirCustomFokenEntity.swift */; };
+		226AAA2F2069682B008AA6A6 /* FirebaseAuthRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AAA2E2069682B008AA6A6 /* FirebaseAuthRepos.swift */; };
+		226AAA3120696FC1008AA6A6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226AAA3020696FC1008AA6A6 /* API.swift */; };
 		22DED4F2205976E80056644A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED4F1205976E80056644A /* AppDelegate.swift */; };
 		22DED4F4205976E80056644A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED4F3205976E80056644A /* ViewController.swift */; };
 		22DED4F7205976E80056644A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DED4F5205976E80056644A /* Main.storyboard */; };
@@ -28,6 +46,24 @@
 
 /* Begin PBXFileReference section */
 		1B4B92C2E6D864AA96D09AC4 /* Pods-MyF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyF.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyF/Pods-MyF.release.xcconfig"; sourceTree = "<group>"; };
+		222FA6B12068162300C32BD0 /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		222FA6B520681F9100C32BD0 /* RealmDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDao.swift; sourceTree = "<group>"; };
+		2233F75320675C77006D5579 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		2233F75620675F3C006D5579 /* OAuthRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthRepos.swift; sourceTree = "<group>"; };
+		2233F75820676CE8006D5579 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		2233F75920676CE8006D5579 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		2233F75A20676CE8006D5579 /* JSONUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
+		2233F75B20676CE8006D5579 /* FirStorageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirStorageUtils.swift; sourceTree = "<group>"; };
+		2233F766206772CD006D5579 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		2233F76820678549006D5579 /* AppKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
+		2233F76A20678635006D5579 /* OAuthTokenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTokenEntity.swift; sourceTree = "<group>"; };
+		2233F76C206786D9006D5579 /* VoidEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidEntity.swift; sourceTree = "<group>"; };
+		2233F76E2067878A006D5579 /* OAuthReposImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthReposImpl.swift; sourceTree = "<group>"; };
+		226AAA28206958F7008AA6A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		226AAA2A20695F0B008AA6A6 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		226AAA2C20696762008AA6A6 /* FirCustomFokenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirCustomFokenEntity.swift; sourceTree = "<group>"; };
+		226AAA2E2069682B008AA6A6 /* FirebaseAuthRepos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthRepos.swift; sourceTree = "<group>"; };
+		226AAA3020696FC1008AA6A6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		22DED4EE205976E80056644A /* MyF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DED4F1205976E80056644A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22DED4F3205976E80056644A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +98,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222FA6B320681F6700C32BD0 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				222FA6B420681F7B00C32BD0 /* Realm */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		222FA6B420681F7B00C32BD0 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				222FA6B520681F9100C32BD0 /* RealmDao.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		2233F75520675ED6006D5579 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2233F75620675F3C006D5579 /* OAuthRepos.swift */,
+				226AAA2E2069682B008AA6A6 /* FirebaseAuthRepos.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		2233F76320677296006D5579 /* Reponsitory */ = {
+			isa = PBXGroup;
+			children = (
+				222FA6B320681F6700C32BD0 /* Dao */,
+				2233F764206772A4006D5579 /* Api */,
+				2233F76E2067878A006D5579 /* OAuthReposImpl.swift */,
+			);
+			path = Reponsitory;
+			sourceTree = "<group>";
+		};
+		2233F764206772A4006D5579 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2233F765206772AE006D5579 /* Entry */,
+				226AAA3020696FC1008AA6A6 /* API.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		2233F765206772AE006D5579 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				2233F766206772CD006D5579 /* ApiResult.swift */,
+				2233F76A20678635006D5579 /* OAuthTokenEntity.swift */,
+				2233F76C206786D9006D5579 /* VoidEntity.swift */,
+				222FA6B12068162300C32BD0 /* LoginEntity.swift */,
+				226AAA2C20696762008AA6A6 /* FirCustomFokenEntity.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
 		22DED4E5205976E80056644A = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +182,7 @@
 				22DED53A2059908C0056644A /* Domain */,
 				2FA8794A206363D600A048CE /* Presentasion */,
 				22DED4F1205976E80056644A /* AppDelegate.swift */,
+				226AAA28206958F7008AA6A6 /* GoogleService-Info.plist */,
 				22DED4F3205976E80056644A /* ViewController.swift */,
 				22DED4F5205976E80056644A /* Main.storyboard */,
 				22DED4FA205976E80056644A /* LaunchScreen.storyboard */,
@@ -130,6 +223,8 @@
 				22DED50820598B2F0056644A /* Extension */,
 				22DED50720598B290056644A /* DI */,
 				22DED50B20598E4C0056644A /* AppColor.swift */,
+				2233F76820678549006D5579 /* AppKey.swift */,
+				226AAA2A20695F0B008AA6A6 /* Const.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -137,6 +232,7 @@
 		22DED50720598B290056644A /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				2233F75320675C77006D5579 /* AppDIContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -160,6 +256,10 @@
 		22DED50A20598B460056644A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2233F75820676CE8006D5579 /* AppUtils.swift */,
+				2233F75920676CE8006D5579 /* DateUtils.swift */,
+				2233F75B20676CE8006D5579 /* FirStorageUtils.swift */,
+				2233F75A20676CE8006D5579 /* JSONUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,6 +289,7 @@
 		22DED5392059907D0056644A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2233F76320677296006D5579 /* Reponsitory */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -196,6 +297,7 @@
 		22DED53A2059908C0056644A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				2233F75520675ED6006D5579 /* Repository */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -312,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22DED4FC205976E80056644A /* LaunchScreen.storyboard in Resources */,
+				226AAA29206958F7008AA6A6 /* GoogleService-Info.plist in Resources */,
 				22DED4F9205976E80056644A /* Assets.xcassets in Resources */,
 				22DED4F7205976E80056644A /* Main.storyboard in Resources */,
 			);
@@ -362,10 +465,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyF/Pods-MyF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -373,10 +481,15 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -392,18 +505,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2233F76B20678635006D5579 /* OAuthTokenEntity.swift in Sources */,
+				2233F75420675C77006D5579 /* AppDIContainer.swift in Sources */,
 				2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */,
+				2233F76F2067878A006D5579 /* OAuthReposImpl.swift in Sources */,
+				226AAA3120696FC1008AA6A6 /* API.swift in Sources */,
 				2FA8794820635C1000A048CE /* FireStore+Rx.swift in Sources */,
 				2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */,
 				22DED4F4205976E80056644A /* ViewController.swift in Sources */,
 				2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */,
+				226AAA2B20695F0B008AA6A6 /* Const.swift in Sources */,
+				226AAA2D20696762008AA6A6 /* FirCustomFokenEntity.swift in Sources */,
 				2FA8794520635C1000A048CE /* FIRAuth+Rx.swift in Sources */,
+				2233F767206772CD006D5579 /* ApiResult.swift in Sources */,
+				2233F75F20676CE8006D5579 /* FirStorageUtils.swift in Sources */,
 				2FA879512063832400A048CE /* EventHub.swift in Sources */,
 				22DED4F2205976E80056644A /* AppDelegate.swift in Sources */,
 				2FA8794720635C1000A048CE /* DataBaseQuery+Rx.swift in Sources */,
 				2FA8794920635C1000A048CE /* FIRBaseModel.swift in Sources */,
+				222FA6B22068162300C32BD0 /* LoginEntity.swift in Sources */,
+				2233F75C20676CE8006D5579 /* AppUtils.swift in Sources */,
 				22DED50C20598E4C0056644A /* AppColor.swift in Sources */,
+				222FA6B620681F9100C32BD0 /* RealmDao.swift in Sources */,
+				2233F75E20676CE8006D5579 /* JSONUtils.swift in Sources */,
+				2233F76920678549006D5579 /* AppKey.swift in Sources */,
+				2233F75D20676CE8006D5579 /* DateUtils.swift in Sources */,
+				2233F75720675F3C006D5579 /* OAuthRepos.swift in Sources */,
 				2FA8794620635C1000A048CE /* FIRBaseRealtime+Rx.swift in Sources */,
+				226AAA2F2069682B008AA6A6 /* FirebaseAuthRepos.swift in Sources */,
+				2233F76D206786D9006D5579 /* VoidEntity.swift in Sources */,
 				2FA8794D206364A600A048CE /* AppInitializeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
