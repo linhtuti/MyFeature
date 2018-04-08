@@ -28,14 +28,14 @@ class API<T> {
     
     func request(observable: AnyObserver<T>) {
         let request = Alamofire.request(self.requestUrl(), method: self.method(), parameters: self.params(), encoding: self.encoding(), headers: self.headers()).responseJSON { (dataResponse) in
-            DLOG(message: "APIResponse: \(dataResponse.debugDescription)")
+            DLOG("APIResponse: \(dataResponse.debugDescription)")
             
             switch dataResponse.result {
             case .success(let value):
-                DLOG(message: value)
+                break
                 
             case .failure(let error):
-                DLOG(message: error.localizedDescription)
+                DLOG(error.localizedDescription)
             }
         }
     }

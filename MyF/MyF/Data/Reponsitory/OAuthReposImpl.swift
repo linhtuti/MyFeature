@@ -11,12 +11,15 @@ import RxSwift
 
 class OAuthReposImpl: OAuthRepos {
     // TODO: implementation method
+    
     func updateOAuthToken() -> Observable<OAuthTokenEntity>? {
         
         return nil
     }
     
     func getOAuthToken() -> Observable<String> {
+        
+        
         return Observable<String>.from([""])
     }
     

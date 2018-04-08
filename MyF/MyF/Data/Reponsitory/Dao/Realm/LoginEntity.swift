@@ -28,11 +28,3 @@ class LoginEntity: Object, DeepCopy {
         return instance
     }
 }
-
-
-protocol DeepCopy {
-    associatedtype T
-    
-    func copyAlone() -> T
-}
-

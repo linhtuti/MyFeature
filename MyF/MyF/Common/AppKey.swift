@@ -9,7 +9,8 @@
 import Foundation
 
 struct AppKey {
-    static let oauthToken = "oauthToken"
-    static let refreshToken = "refreshToken"
-    static let TOKEN        = "token"
+    static let OAUTHTOKEN                    = "oauthToken"
+    static let OAUTHTOKEN_REFRESH            = "refreshToken"
+    static let TOKEN                         = "token"
+    static let USERID                        = "userId"
 }

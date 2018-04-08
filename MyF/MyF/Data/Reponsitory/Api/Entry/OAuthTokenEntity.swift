@@ -16,7 +16,7 @@ class OAuthTokenEntity: ApiResult {
     required init(_ val: NSDictionary) {
         super.init(val)
         let json = JSON(val)
-        oauthToken       = json[AppKey.oauthToken].stringValue
-        refreshToken     = json[AppKey.refreshToken].stringValue
+        oauthToken       = json[AppKey.OAUTHTOKEN].stringValue
+        refreshToken     = json[AppKey.OAUTHTOKEN_REFRESH].stringValue
     }
 }

@@ -17,7 +17,7 @@ class AppUtils {
 }
 
 
-func DLOG(message: String) {
+func DLOG(_ message: String) {
     #if DEBUG
         DDLogDebug(message)
     #endif
