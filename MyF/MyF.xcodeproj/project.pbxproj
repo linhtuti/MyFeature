@@ -36,6 +36,19 @@
 		22DED4F9205976E80056644A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DED4F8205976E80056644A /* Assets.xcassets */; };
 		22DED4FC205976E80056644A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DED4FA205976E80056644A /* LaunchScreen.storyboard */; };
 		22DED50C20598E4C0056644A /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DED50B20598E4C0056644A /* AppColor.swift */; };
+		22EBABAA207BD006004EEC64 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABA9207BD006004EEC64 /* BaseView.swift */; };
+		22EBABAC207BD032004EEC64 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABAB207BD032004EEC64 /* BaseVC.swift */; };
+		22EBABAF207BD05E004EEC64 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABAE207BD05E004EEC64 /* Presenter.swift */; };
+		22EBABB1207BD0B2004EEC64 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB0207BD0B2004EEC64 /* BasePresenter.swift */; };
+		22EBABB4207BDB89004EEC64 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB3207BDB89004EEC64 /* Validatable.swift */; };
+		22EBABB7207BDC85004EEC64 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB6207BDC85004EEC64 /* Rule.swift */; };
+		22EBABB9207BDF32004EEC64 /* MaxRangeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB8207BDF32004EEC64 /* MaxRangeRule.swift */; };
+		22EBABBB207BE0B9004EEC64 /* MinRangeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABBA207BE0B9004EEC64 /* MinRangeRule.swift */; };
+		22EBABBD207BE0FC004EEC64 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABBC207BE0FC004EEC64 /* EmailRule.swift */; };
+		22EBABBF207BE14E004EEC64 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABBE207BE14E004EEC64 /* RegexRule.swift */; };
+		22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC0207BE801004EEC64 /* PassRule.swift */; };
+		22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC2207BE862004EEC64 /* PhoneRule.swift */; };
+		22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC4207BE903004EEC64 /* FloatRule.swift */; };
 		2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793A206357A600A048CE /* NSObject+Rx.swift */; };
 		2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */; };
 		2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */; };
@@ -82,6 +95,19 @@
 		22DED4FB205976E80056644A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22DED4FD205976E80056644A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22DED50B20598E4C0056644A /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		22EBABA9207BD006004EEC64 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		22EBABAB207BD032004EEC64 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		22EBABAE207BD05E004EEC64 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		22EBABB0207BD0B2004EEC64 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		22EBABB3207BDB89004EEC64 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		22EBABB6207BDC85004EEC64 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		22EBABB8207BDF32004EEC64 /* MaxRangeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxRangeRule.swift; sourceTree = "<group>"; };
+		22EBABBA207BE0B9004EEC64 /* MinRangeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinRangeRule.swift; sourceTree = "<group>"; };
+		22EBABBC207BE0FC004EEC64 /* EmailRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
+		22EBABBE207BE14E004EEC64 /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		22EBABC0207BE801004EEC64 /* PassRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRule.swift; sourceTree = "<group>"; };
+		22EBABC2207BE862004EEC64 /* PhoneRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRule.swift; sourceTree = "<group>"; };
+		22EBABC4207BE903004EEC64 /* FloatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRule.swift; sourceTree = "<group>"; };
 		2FA8793A206357A600A048CE /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObjectEncoder.swift; sourceTree = "<group>"; };
@@ -240,6 +266,7 @@
 		22DED50620598AE60056644A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				22EBABB2207BDB58004EEC64 /* Validate */,
 				22DED50A20598B460056644A /* Utils */,
 				22DED50920598B410056644A /* Log */,
 				22DED50820598B2F0056644A /* Extension */,
@@ -325,9 +352,69 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		22EBABA6207BCFE2004EEC64 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABAD207BD04B004EEC64 /* Base */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		22EBABA7207BCFEC004EEC64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABA8207BCFF7004EEC64 /* Base */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22EBABA8207BCFF7004EEC64 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABA9207BD006004EEC64 /* BaseView.swift */,
+				22EBABAB207BD032004EEC64 /* BaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		22EBABAD207BD04B004EEC64 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABAE207BD05E004EEC64 /* Presenter.swift */,
+				22EBABB0207BD0B2004EEC64 /* BasePresenter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		22EBABB2207BDB58004EEC64 /* Validate */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABB5207BDC72004EEC64 /* Rules */,
+				22EBABB3207BDB89004EEC64 /* Validatable.swift */,
+			);
+			path = Validate;
+			sourceTree = "<group>";
+		};
+		22EBABB5207BDC72004EEC64 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABB6207BDC85004EEC64 /* Rule.swift */,
+				22EBABB8207BDF32004EEC64 /* MaxRangeRule.swift */,
+				22EBABBA207BE0B9004EEC64 /* MinRangeRule.swift */,
+				22EBABBC207BE0FC004EEC64 /* EmailRule.swift */,
+				22EBABBE207BE14E004EEC64 /* RegexRule.swift */,
+				22EBABC0207BE801004EEC64 /* PassRule.swift */,
+				22EBABC2207BE862004EEC64 /* PhoneRule.swift */,
+				22EBABC4207BE903004EEC64 /* FloatRule.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
 		2FA8794A206363D600A048CE /* Presentasion */ = {
 			isa = PBXGroup;
 			children = (
+				22EBABA7207BCFEC004EEC64 /* View */,
+				22EBABA6207BCFE2004EEC64 /* Presenter */,
 				2FA8794B2063646600A048CE /* Manager */,
 			);
 			path = Presentasion;
@@ -533,6 +620,8 @@
 				22C2B0D4206D4F6900694354 /* DeepCopy.swift in Sources */,
 				2233F75420675C77006D5579 /* AppDIContainer.swift in Sources */,
 				2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */,
+				22EBABB4207BDB89004EEC64 /* Validatable.swift in Sources */,
+				22EBABBB207BE0B9004EEC64 /* MinRangeRule.swift in Sources */,
 				2233F76F2067878A006D5579 /* OAuthReposImpl.swift in Sources */,
 				226AAA3120696FC1008AA6A6 /* API.swift in Sources */,
 				2FA8794820635C1000A048CE /* FireStore+Rx.swift in Sources */,
@@ -541,13 +630,17 @@
 				2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */,
 				226AAA2B20695F0B008AA6A6 /* Const.swift in Sources */,
 				226AAA2D20696762008AA6A6 /* FirCustomFokenEntity.swift in Sources */,
+				22EBABBF207BE14E004EEC64 /* RegexRule.swift in Sources */,
 				2FA8794520635C1000A048CE /* FIRAuth+Rx.swift in Sources */,
 				2233F767206772CD006D5579 /* ApiResult.swift in Sources */,
+				22EBABAA207BD006004EEC64 /* BaseView.swift in Sources */,
 				22C2B0D2206D4C0100694354 /* LoginRepos.swift in Sources */,
 				2233F75F20676CE8006D5579 /* FirStorageUtils.swift in Sources */,
 				2FA879512063832400A048CE /* EventHub.swift in Sources */,
 				22DED4F2205976E80056644A /* AppDelegate.swift in Sources */,
+				22EBABAF207BD05E004EEC64 /* Presenter.swift in Sources */,
 				2FA8794720635C1000A048CE /* DataBaseQuery+Rx.swift in Sources */,
+				22EBABAC207BD032004EEC64 /* BaseVC.swift in Sources */,
 				2FA8794920635C1000A048CE /* FIRBaseModel.swift in Sources */,
 				2233F75C20676CE8006D5579 /* AppUtils.swift in Sources */,
 				22DED50C20598E4C0056644A /* AppColor.swift in Sources */,
@@ -557,9 +650,16 @@
 				2233F75D20676CE8006D5579 /* DateUtils.swift in Sources */,
 				22C8E376206BEF9500A9DACD /* LoginDao.swift in Sources */,
 				2233F75720675F3C006D5579 /* OAuthRepos.swift in Sources */,
+				22EBABB1207BD0B2004EEC64 /* BasePresenter.swift in Sources */,
+				22EBABB9207BDF32004EEC64 /* MaxRangeRule.swift in Sources */,
 				2FA8794620635C1000A048CE /* FIRBaseRealtime+Rx.swift in Sources */,
+				22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */,
 				226AAA2F2069682B008AA6A6 /* FirebaseAuthRepos.swift in Sources */,
+				22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */,
+				22EBABBD207BE0FC004EEC64 /* EmailRule.swift in Sources */,
+				22EBABB7207BDC85004EEC64 /* Rule.swift in Sources */,
 				2233F76D206786D9006D5579 /* VoidEntity.swift in Sources */,
+				22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */,
 				2FA8794D206364A600A048CE /* AppInitializeManager.swift in Sources */,
 				22C2B0DA206D58C900694354 /* LoginReposImpl.swift in Sources */,
 				22C2B0D6206D4F9500694354 /* LoginEntity.swift in Sources */,
