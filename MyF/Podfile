@@ -17,7 +17,6 @@ target 'MyF' do
   pod 'Firebase/Auth'
   
   pod 'Swinject'
-  pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
   pod 'SwiftyJSON'
   pod 'RealmSwift'
 end

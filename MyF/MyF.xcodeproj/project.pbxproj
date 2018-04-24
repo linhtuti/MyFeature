@@ -49,6 +49,10 @@
 		22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC0207BE801004EEC64 /* PassRule.swift */; };
 		22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC2207BE862004EEC64 /* PhoneRule.swift */; };
 		22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC4207BE903004EEC64 /* FloatRule.swift */; };
+		2F2E63AF208F114F00DDC672 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63AE208F114F00DDC672 /* LoginVC.swift */; };
+		2F2E63B2208F115F00DDC672 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B1208F115F00DDC672 /* LoginView.swift */; };
+		2F2E63B5208F138100DDC672 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B4208F138100DDC672 /* LoginPresenter.swift */; };
+		2F2E63B8208F184500DDC672 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B7208F184500DDC672 /* LoginUseCase.swift */; };
 		2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793A206357A600A048CE /* NSObject+Rx.swift */; };
 		2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */; };
 		2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */; };
@@ -108,6 +112,10 @@
 		22EBABC0207BE801004EEC64 /* PassRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRule.swift; sourceTree = "<group>"; };
 		22EBABC2207BE862004EEC64 /* PhoneRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRule.swift; sourceTree = "<group>"; };
 		22EBABC4207BE903004EEC64 /* FloatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRule.swift; sourceTree = "<group>"; };
+		2F2E63AE208F114F00DDC672 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2F2E63B1208F115F00DDC672 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F2E63B4208F138100DDC672 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		2F2E63B7208F184500DDC672 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		2FA8793A206357A600A048CE /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObjectEncoder.swift; sourceTree = "<group>"; };
@@ -195,11 +203,12 @@
 			path = Entry;
 			sourceTree = "<group>";
 		};
-		22C2B0D0206D4B2400694354 /* Usecase */ = {
+		22C2B0D0206D4B2400694354 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				2F2E63B6208F17EB00DDC672 /* Login */,
 			);
-			path = Usecase;
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 		22DED4E5205976E80056644A = {
@@ -346,7 +355,7 @@
 		22DED53A2059908C0056644A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				22C2B0D0206D4B2400694354 /* Usecase */,
+				22C2B0D0206D4B2400694354 /* UseCase */,
 				2233F75520675ED6006D5579 /* Repository */,
 			);
 			path = Domain;
@@ -355,6 +364,7 @@
 		22EBABA6207BCFE2004EEC64 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				2F2E63B3208F126000DDC672 /* Login */,
 				22EBABAD207BD04B004EEC64 /* Base */,
 			);
 			path = Presenter;
@@ -363,6 +373,7 @@
 		22EBABA7207BCFEC004EEC64 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F2E63B0208F115400DDC672 /* Login */,
 				22EBABA8207BCFF7004EEC64 /* Base */,
 			);
 			path = View;
@@ -372,7 +383,6 @@
 			isa = PBXGroup;
 			children = (
 				22EBABA9207BD006004EEC64 /* BaseView.swift */,
-				22EBABAB207BD032004EEC64 /* BaseVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -410,9 +420,59 @@
 			path = Rules;
 			sourceTree = "<group>";
 		};
+		2F2E63AB208F10F500DDC672 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E63AD208F113F00DDC672 /* Login */,
+				2F2E63AC208F111400DDC672 /* Base */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2E63AC208F111400DDC672 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22EBABAB207BD032004EEC64 /* BaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2F2E63AD208F113F00DDC672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E63AE208F114F00DDC672 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F2E63B0208F115400DDC672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E63B1208F115F00DDC672 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F2E63B3208F126000DDC672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E63B4208F138100DDC672 /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F2E63B6208F17EB00DDC672 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E63B7208F184500DDC672 /* LoginUseCase.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		2FA8794A206363D600A048CE /* Presentasion */ = {
 			isa = PBXGroup;
 			children = (
+				2F2E63AB208F10F500DDC672 /* Controller */,
 				22EBABA7207BCFEC004EEC64 /* View */,
 				22EBABA6207BCFE2004EEC64 /* Presenter */,
 				2FA8794B2063646600A048CE /* Manager */,
@@ -575,7 +635,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyF/Pods-MyF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -591,7 +650,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -617,6 +675,7 @@
 			files = (
 				2233F76B20678635006D5579 /* OAuthTokenEntity.swift in Sources */,
 				22C2B0D8206D508700694354 /* LoginResultEntity.swift in Sources */,
+				2F2E63B8208F184500DDC672 /* LoginUseCase.swift in Sources */,
 				22C2B0D4206D4F6900694354 /* DeepCopy.swift in Sources */,
 				2233F75420675C77006D5579 /* AppDIContainer.swift in Sources */,
 				2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */,
@@ -624,6 +683,7 @@
 				22EBABBB207BE0B9004EEC64 /* MinRangeRule.swift in Sources */,
 				2233F76F2067878A006D5579 /* OAuthReposImpl.swift in Sources */,
 				226AAA3120696FC1008AA6A6 /* API.swift in Sources */,
+				2F2E63B5208F138100DDC672 /* LoginPresenter.swift in Sources */,
 				2FA8794820635C1000A048CE /* FireStore+Rx.swift in Sources */,
 				2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */,
 				22DED4F4205976E80056644A /* ViewController.swift in Sources */,
@@ -638,6 +698,7 @@
 				2233F75F20676CE8006D5579 /* FirStorageUtils.swift in Sources */,
 				2FA879512063832400A048CE /* EventHub.swift in Sources */,
 				22DED4F2205976E80056644A /* AppDelegate.swift in Sources */,
+				2F2E63AF208F114F00DDC672 /* LoginVC.swift in Sources */,
 				22EBABAF207BD05E004EEC64 /* Presenter.swift in Sources */,
 				2FA8794720635C1000A048CE /* DataBaseQuery+Rx.swift in Sources */,
 				22EBABAC207BD032004EEC64 /* BaseVC.swift in Sources */,
@@ -652,6 +713,7 @@
 				2233F75720675F3C006D5579 /* OAuthRepos.swift in Sources */,
 				22EBABB1207BD0B2004EEC64 /* BasePresenter.swift in Sources */,
 				22EBABB9207BDF32004EEC64 /* MaxRangeRule.swift in Sources */,
+				2F2E63B2208F115F00DDC672 /* LoginView.swift in Sources */,
 				2FA8794620635C1000A048CE /* FIRBaseRealtime+Rx.swift in Sources */,
 				22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */,
 				226AAA2F2069682B008AA6A6 /* FirebaseAuthRepos.swift in Sources */,

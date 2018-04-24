@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class LoginDao: RealmDao<LoginEntity> {
-    func createOrUpdate(_ userId: String, token: String, tokenRefresh: String) throws {
+    func createOrUpdate(_ userId: String, token: String?, tokenRefresh: String?) throws {
         let loginEntity = LoginEntity()
         
         loginEntity.userId = userId

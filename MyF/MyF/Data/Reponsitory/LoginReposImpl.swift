@@ -23,7 +23,7 @@ class LoginReposImpl: LoginRepos {
         })
     }
     
-    func setLogin(userId: String, token: String, refreshToken: String) throws {
+    func setLogin(userId: String, token: String?, refreshToken: String?) throws {
         try self.dao?.createOrUpdate(userId, token: token, tokenRefresh: refreshToken)
     }
     

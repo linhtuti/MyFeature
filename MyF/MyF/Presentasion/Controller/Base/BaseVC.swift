@@ -8,8 +8,10 @@
 
 import UIKit
 
-class BaseVC: UIViewController, BaseView {
-    var presenter: BasePresenter!
+class BaseVC: UIViewController, BaseVCProtocol, BaseView {
+    typealias T = BasePresenter
+
+    var presenter: T?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +19,16 @@ class BaseVC: UIViewController, BaseView {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.presenter.attach(self)
+        self.presenter?.attach(self)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.presenter.detach()
+        self.presenter?.detach()
     }
+}
+
+
+protocol BaseVCProtocol {
+    associatedtype T
 }
