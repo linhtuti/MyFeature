@@ -9,11 +9,10 @@
 import Foundation
 
 class BasePresenter: Presenter {
-    typealias T = BaseVC
+    typealias T = BaseView
+    var view: T?
     
-    var view: T!
-    
-    func attach(_ view: BasePresenter.T) {
+    func attach(_ view: T) {
         self.view = view
     }
     

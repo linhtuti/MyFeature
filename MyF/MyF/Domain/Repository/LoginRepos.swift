@@ -11,7 +11,7 @@ import RxSwift
 
 protocol LoginRepos {
     func requestLogin(userId: String, pass: String) -> Observable<LoginEntity>
-    func setLogin(userId: String, token: String, refreshToken: String) throws
+    func setLogin(userId: String, token: String?, refreshToken: String?) throws
     func getLogin() throws -> LoginEntity?
     func deleteLogin() throws
 }
