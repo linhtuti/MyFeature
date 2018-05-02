@@ -6,8 +6,6 @@
 //  Copyright © 2017年 Dr.JOY No,054. All rights reserved.
 //
 
-import CocoaLumberjack
-
 class AppUtils {
     
     static func apiUrl() -> String {
@@ -19,6 +17,6 @@ class AppUtils {
 
 func DLOG(_ message: String) {
     #if DEBUG
-        DDLogDebug(message)
+        print(message)
     #endif
 }

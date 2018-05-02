@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 import Firebase
-import CocoaLumberjack
 
 class AppInitializeManager {
     static let appInitializeManager = AppInitializeManager()
@@ -18,8 +17,7 @@ class AppInitializeManager {
     fileprivate var initialized = false
 
     func prepare(_ application: UIApplication) {
-        let listInit:[Task] = [DDLogInit(),
-                               RealmInit(),
+        let listInit:[Task] = [RealmInit(),
                                FirInit()]
 
         var completed = 0
@@ -47,17 +45,6 @@ class AppInitializeManager {
 
 protocol Task {
     func run(observer: AnyObserver<Bool>)
-}
-
-class DDLogInit: Task {
-    func run(observer: AnyObserver<Bool>) {
-        #if DEBUG
-            DDLog.add(DDTTYLogger.sharedInstance, with: .debug)
-        #else
-            DDLog.add(DDTTYLogger.sharedInstance, with: .error)
-        #endif
-        observer.onNext(true)
-    }
 }
 
 class RealmInit: Task{

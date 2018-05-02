@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Intinial AppConfig
         AppInitializeManager.appInitializeManager.prepare(application)
-
         EventHub.addObservation(observer: self, thread: Thread.main) { (hubType:AppInitializeEventType) in
             if hubType.isSuccess {
                 
