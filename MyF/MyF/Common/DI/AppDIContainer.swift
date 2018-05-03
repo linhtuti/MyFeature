@@ -32,7 +32,7 @@ class AppDIContainer {
 
         // UseCase
         self.main.register(LoginUseCase.self) { r in
-            return LoginUseCase(r.resolve(LoginRepos.self))
+            return LoginUseCase(r.resolve(LoginRepos.self)!)
         }
 
     }
