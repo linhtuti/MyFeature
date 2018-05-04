@@ -14,8 +14,7 @@ target 'MyF' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
-  
-  pod 'Swinject'
+
   pod 'SwiftyJSON'
   pod 'RealmSwift'
 end

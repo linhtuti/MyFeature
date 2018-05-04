@@ -2,7 +2,7 @@
 //  LoginVC.swift
 //  MyF
 //
-//  Created by ntq on 4/24/18.
+//  Created by ntq on 5/4/18.
 //  Copyright © 2018 macOS. All rights reserved.
 //
 
@@ -16,12 +16,17 @@ class LoginVC: BaseVC, LoginView{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // LoginVC.init(presenter: LoginPresenter(<#T##modelUseCase: LoginUseCase##LoginUseCase#>), nibName: type(of: LoginVC.self))
+    }
+
+    @IBAction func signInAction(_ sender: UIButton?) {
+
     }
 }
-
 
 extension LoginVC {
     func loginSuccess() {
         // TODO: Something
     }
 }
+

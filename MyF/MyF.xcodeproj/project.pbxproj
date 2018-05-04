@@ -50,10 +50,11 @@
 		22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC0207BE801004EEC64 /* PassRule.swift */; };
 		22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC2207BE862004EEC64 /* PhoneRule.swift */; };
 		22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC4207BE903004EEC64 /* FloatRule.swift */; };
-		2F2E63AF208F114F00DDC672 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63AE208F114F00DDC672 /* LoginVC.swift */; };
 		2F2E63B2208F115F00DDC672 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B1208F115F00DDC672 /* LoginView.swift */; };
 		2F2E63B5208F138100DDC672 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B4208F138100DDC672 /* LoginPresenter.swift */; };
 		2F2E63B8208F184500DDC672 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B7208F184500DDC672 /* LoginUseCase.swift */; };
+		2F45D754209C564600DE0A26 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F45D752209C564600DE0A26 /* LoginVC.swift */; };
+		2F45D755209C564600DE0A26 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F45D753209C564600DE0A26 /* LoginVC.xib */; };
 		2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793A206357A600A048CE /* NSObject+Rx.swift */; };
 		2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */; };
 		2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */; };
@@ -114,10 +115,11 @@
 		22EBABC0207BE801004EEC64 /* PassRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRule.swift; sourceTree = "<group>"; };
 		22EBABC2207BE862004EEC64 /* PhoneRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRule.swift; sourceTree = "<group>"; };
 		22EBABC4207BE903004EEC64 /* FloatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRule.swift; sourceTree = "<group>"; };
-		2F2E63AE208F114F00DDC672 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2F2E63B1208F115F00DDC672 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2F2E63B4208F138100DDC672 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		2F2E63B7208F184500DDC672 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		2F45D752209C564600DE0A26 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2F45D753209C564600DE0A26 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		2FA8793A206357A600A048CE /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObjectEncoder.swift; sourceTree = "<group>"; };
@@ -300,7 +302,6 @@
 		22DED50820598B2F0056644A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				22DED53820598FF00056644A /* SwinjectXIB */,
 				22DED53720598FE80056644A /* Rx */,
 				22449F6A209108D800470A21 /* String+Ex.swift */,
 			);
@@ -338,13 +339,6 @@
 				2FA8793A206357A600A048CE /* NSObject+Rx.swift */,
 			);
 			path = Rx;
-			sourceTree = "<group>";
-		};
-		22DED53820598FF00056644A /* SwinjectXIB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwinjectXIB;
 			sourceTree = "<group>";
 		};
 		22DED5392059907D0056644A /* Data */ = {
@@ -443,7 +437,8 @@
 		2F2E63AD208F113F00DDC672 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F2E63AE208F114F00DDC672 /* LoginVC.swift */,
+				2F45D752209C564600DE0A26 /* LoginVC.swift */,
+				2F45D753209C564600DE0A26 /* LoginVC.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -586,6 +581,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F45D755209C564600DE0A26 /* LoginVC.xib in Resources */,
 				22DED4FC205976E80056644A /* LaunchScreen.storyboard in Resources */,
 				226AAA29206958F7008AA6A6 /* GoogleService-Info.plist in Resources */,
 				22DED4F9205976E80056644A /* Assets.xcassets in Resources */,
@@ -644,7 +640,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -658,7 +653,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -700,7 +694,6 @@
 				2233F75F20676CE8006D5579 /* FirStorageUtils.swift in Sources */,
 				2FA879512063832400A048CE /* EventHub.swift in Sources */,
 				22DED4F2205976E80056644A /* AppDelegate.swift in Sources */,
-				2F2E63AF208F114F00DDC672 /* LoginVC.swift in Sources */,
 				22EBABAF207BD05E004EEC64 /* Presenter.swift in Sources */,
 				2FA8794720635C1000A048CE /* DataBaseQuery+Rx.swift in Sources */,
 				22EBABAC207BD032004EEC64 /* BaseVC.swift in Sources */,
@@ -721,6 +714,7 @@
 				226AAA2F2069682B008AA6A6 /* FirebaseAuthRepos.swift in Sources */,
 				22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */,
 				22EBABBD207BE0FC004EEC64 /* EmailRule.swift in Sources */,
+				2F45D754209C564600DE0A26 /* LoginVC.swift in Sources */,
 				22EBABB7207BDC85004EEC64 /* Rule.swift in Sources */,
 				2233F76D206786D9006D5579 /* VoidEntity.swift in Sources */,
 				22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */,

@@ -12,6 +12,15 @@ class BaseVC: UIViewController, BaseVCProtocol, BaseView {
     typealias T = BasePresenter
 
     var presenter: T?
+
+    init(presenter: BasePresenter, nibName: String) {
+        super.init(nibName: nibName, bundle: nil)
+        self.presenter = presenter
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+         fatalError("init(coder:) is not supported")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
