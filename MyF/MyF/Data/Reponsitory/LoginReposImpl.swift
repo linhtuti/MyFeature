@@ -19,6 +19,8 @@ class LoginReposImpl: LoginRepos {
     
     func requestLogin(userId: String, pass: String) -> Observable<LoginEntity> {
         return Observable<LoginEntity>.create({ observable -> Disposable in
+
+            // observable.onNext(<#T##element: LoginEntity##LoginEntity#>)
             return Disposables.create()
         })
     }

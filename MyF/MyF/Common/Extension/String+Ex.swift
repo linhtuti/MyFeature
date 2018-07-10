@@ -63,4 +63,8 @@ extension String {
         let end = index(startIndex, offsetBy: bounds.upperBound)
         return self[startIndex ..< end]
     }
+
+    func validation(with rule: Rule) -> Bool {
+        return rule.validate(self)
+    }
 }

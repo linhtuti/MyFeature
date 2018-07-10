@@ -15,7 +15,7 @@ class AppDIContainer {
     let main: Container = Container()
     
     init() {
-        
+        setupMain()
     }
     
     func setupMain() {
@@ -28,12 +28,27 @@ class AppDIContainer {
             return LoginReposImpl(dao: LoginDao())
         }
 
-
+        self.main.register(FirebaseAuthRepos.self) { r in
+            return FirebaseAuthReposImpl()
+        }
 
         // UseCase
         self.main.register(LoginUseCase.self) { r in
-            return LoginUseCase(r.resolve(LoginRepos.self)!)
+            return LoginUseCase(r.resolve(LoginRepos.self)!, frAuthRepos: r.resolve(FirebaseAuthRepos.self)!)
         }
 
+        // Presenter
+        self.main.register(LoginPresenter.self) { (r: Resolver, coordinator: LoginCoordinator) in
+            return LoginPresenter(r.resolve(LoginUseCase.self)!, coordinator: coordinator)
+        }
+
+        self.main.register(LoginWithAccountPresenter.self) { (r: Resolver, coordinator: LoginCoordinator) in
+            return LoginWithAccountPresenter(r.resolve(LoginUseCase.self)!, coordinator: coordinator)
+        }
+
+        // Main presenter
+        self.main.register(MainPresenter.self) { (r, coordinator: MainCoordinator) in
+            return MainPresenter(coordinator)
+        }
     }
 }

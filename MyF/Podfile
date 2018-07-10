@@ -14,8 +14,13 @@ target 'MyF' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
   
   pod 'Swinject'
   pod 'SwiftyJSON'
   pod 'RealmSwift'
+
+  pod 'SVProgressHUD'
 end

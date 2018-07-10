@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct PassRule: RegexRule {
+    var regex: String {
+        return "^(?=.*?[a-z,A-Z]).{8,}$"
+    }
+}

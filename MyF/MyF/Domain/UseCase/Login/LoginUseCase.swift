@@ -8,28 +8,31 @@
 
 import Foundation
 import RxSwift
+import FirebaseAuth
 
 class LoginUseCase {
     private var loginRepos: LoginRepos!
+    private var frAuthRepos: FirebaseAuthRepos!
 
-    init(_ loginRepos: LoginRepos) {
+    init(_ loginRepos: LoginRepos, frAuthRepos: FirebaseAuthRepos) {
         self.loginRepos = loginRepos
+        self.frAuthRepos  = frAuthRepos
+
     }
 
-    func exe(userName: String, password: String) -> Observable<VoidEntity> {
-        return Observable<VoidEntity>.create({ observable -> Disposable in
-            self.loginRepos.requestLogin(userId: userName, pass: password).subscribe(onNext: { (loginEntity: LoginEntity) in
-                do{
-                    try self.loginRepos.setLogin(userId: loginEntity.userId ?? "", token: loginEntity.oauthToken, refreshToken: loginEntity.oauthRefreshToken)
-                    observable.onNext(VoidEntity())
-                    observable.onCompleted()
-                } catch let error {
-                    observable.onError(error)
-                    DLOG(error.localizedDescription)
-                }
-            }, onError: { error in
-                observable.onError(error)
-            })
-        })
+    func exeLogin(userName: String, password: String) -> Observable<VoidEntity> {
+        return frAuthRepos.loginFir(userName: userName, pass: password)
+    }
+
+    func exeRegister(userName: String, password: String) -> Observable<VoidEntity> {
+        return frAuthRepos.registerFir(userName: userName, pass: password)
+    }
+
+    func exeLoginWithGoogle(id: String, token: String) -> Observable<VoidEntity> {
+        return frAuthRepos.loginWithGoogle(id: id, token: token)
+    }
+
+    func exeLoginWithFacebook(token: String) -> Observable<VoidEntity> {
+        return frAuthRepos.loginWithFacebook(token: token)
     }
 }

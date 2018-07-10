@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct PhoneRule: RegexRule {
+    var regex: String {
+        get { return "^\\d{10}$" }
+    }
+}

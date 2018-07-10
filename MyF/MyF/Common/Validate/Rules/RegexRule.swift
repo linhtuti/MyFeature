@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+protocol RegexRule: Rule {
+    var regex: String { get }
+}
+
+extension RegexRule {
+    func validate(_ string: String) -> Bool {
+        let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
+        return predicate.evaluate(with: string)
+    }
+}

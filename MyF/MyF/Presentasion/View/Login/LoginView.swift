@@ -8,6 +8,8 @@
 
 import Foundation
 
-protocol LoginView: BaseView{
-    func loginSuccess()
+protocol LoginView: BaseView {
+    func loginSuccess(success: Bool)
+    func loginWithGoogleSuccess(success: Bool)
+    func loginWithFacebookSuccess(success: Bool)
 }

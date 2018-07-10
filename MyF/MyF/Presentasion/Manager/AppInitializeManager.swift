@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import Firebase
+import GoogleSignIn
 
 class AppInitializeManager {
     static let appInitializeManager = AppInitializeManager()
@@ -65,7 +66,8 @@ class FirInit: Task {
     func run(observer: AnyObserver<Bool>) {
         if let path = Bundle.main.path(forResource: Const.PATH_GOOGLE_CONFIG, ofType: "plist"), let frBaseOption = FirebaseOptions.init(contentsOfFile: path) {
             FirebaseApp.configure(options: frBaseOption)
-            
+            GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+
             observer.onNext(true)
         }
     }

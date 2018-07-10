@@ -43,17 +43,23 @@
 		22EBABB1207BD0B2004EEC64 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB0207BD0B2004EEC64 /* BasePresenter.swift */; };
 		22EBABB4207BDB89004EEC64 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB3207BDB89004EEC64 /* Validatable.swift */; };
 		22EBABB7207BDC85004EEC64 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB6207BDC85004EEC64 /* Rule.swift */; };
-		22EBABB9207BDF32004EEC64 /* MaxRangeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB8207BDF32004EEC64 /* MaxRangeRule.swift */; };
-		22EBABBB207BE0B9004EEC64 /* MinRangeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABBA207BE0B9004EEC64 /* MinRangeRule.swift */; };
+		22EBABB9207BDF32004EEC64 /* RangeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABB8207BDF32004EEC64 /* RangeRule.swift */; };
 		22EBABBD207BE0FC004EEC64 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABBC207BE0FC004EEC64 /* EmailRule.swift */; };
 		22EBABBF207BE14E004EEC64 /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABBE207BE14E004EEC64 /* RegexRule.swift */; };
 		22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC0207BE801004EEC64 /* PassRule.swift */; };
 		22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC2207BE862004EEC64 /* PhoneRule.swift */; };
 		22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EBABC4207BE903004EEC64 /* FloatRule.swift */; };
-		2F2E63AF208F114F00DDC672 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63AE208F114F00DDC672 /* LoginVC.swift */; };
+		2F08083820A05D460045FB7E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F08083620A05D460045FB7E /* LoginVC.swift */; };
+		2F08083920A05D460045FB7E /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F08083720A05D460045FB7E /* LoginVC.xib */; };
+		2F08084120A065680045FB7E /* LoginWithAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F08084020A065680045FB7E /* LoginWithAccountView.swift */; };
 		2F2E63B2208F115F00DDC672 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B1208F115F00DDC672 /* LoginView.swift */; };
 		2F2E63B5208F138100DDC672 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B4208F138100DDC672 /* LoginPresenter.swift */; };
 		2F2E63B8208F184500DDC672 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E63B7208F184500DDC672 /* LoginUseCase.swift */; };
+		2F53D37E20BBBF010014EB1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53D37D20BBBF010014EB1B /* MainView.swift */; };
+		2F53D38120BBBF590014EB1B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53D38020BBBF590014EB1B /* MainPresenter.swift */; };
+		2F53D38320BBBFEE0014EB1B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53D38220BBBFEE0014EB1B /* MainCoordinator.swift */; };
+		2F53D38720BBE4010014EB1B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F53D38520BBE4010014EB1B /* MainVC.swift */; };
+		2F53D38820BBE4010014EB1B /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F53D38620BBE4010014EB1B /* MainVC.xib */; };
 		2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793A206357A600A048CE /* NSObject+Rx.swift */; };
 		2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */; };
 		2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */; };
@@ -64,6 +70,21 @@
 		2FA8794920635C1000A048CE /* FIRBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8794220635C0F00A048CE /* FIRBaseModel.swift */; };
 		2FA8794D206364A600A048CE /* AppInitializeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8794C206364A600A048CE /* AppInitializeManager.swift */; };
 		2FA879512063832400A048CE /* EventHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA879502063832400A048CE /* EventHub.swift */; };
+		2FD833A620B7EB2E004FDDFD /* FBAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD833A520B7EB2E004FDDFD /* FBAuthManager.swift */; };
+		2FDE79B620AABA1700522821 /* FirBaseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE79B520AABA1700522821 /* FirBaseAuthentication.swift */; };
+		2FDE79B820AABF7B00522821 /* FirCustomTokenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE79B720AABF7B00522821 /* FirCustomTokenEntity.swift */; };
+		2FDE79BA20AAC58200522821 /* FirebaseAuthReposImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDE79B920AAC58200522821 /* FirebaseAuthReposImpl.swift */; };
+		2FE43A3320A293FF0017B9C5 /* LoginWithAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3220A293FF0017B9C5 /* LoginWithAccountPresenter.swift */; };
+		2FE43A3520A2B35F0017B9C5 /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3420A2B35F0017B9C5 /* ZipCodeRule.swift */; };
+		2FE43A3720A2B39F0017B9C5 /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3620A2B39F0017B9C5 /* FullNameRule.swift */; };
+		2FE43A3920A2B4050017B9C5 /* CharacterSetRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3820A2B4050017B9C5 /* CharacterSetRule.swift */; };
+		2FE43A3B20A2E1E30017B9C5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3A20A2E1E30017B9C5 /* AppCoordinator.swift */; };
+		2FE43A3D20A2E20B0017B9C5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3C20A2E20B0017B9C5 /* Coordinator.swift */; };
+		2FE43A3F20A2EE290017B9C5 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A3E20A2EE290017B9C5 /* LoginCoordinator.swift */; };
+		2FE43A4120A2FCA70017B9C5 /* LoginCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A4020A2FCA70017B9C5 /* LoginCoordinatorProtocol.swift */; };
+		2FE43A4320A2FCC40017B9C5 /* LoginAccountCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE43A4220A2FCC40017B9C5 /* LoginAccountCoordinatorProtocol.swift */; };
+		2FF4BE3220AA95B3009891AC /* LoginWithAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4BE3020AA95B3009891AC /* LoginWithAccountVC.swift */; };
+		2FF4BE3320AA95B3009891AC /* LoginWithAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF4BE3120AA95B3009891AC /* LoginWithAccountVC.xib */; };
 		460663E86DF58661CC3AEC5A /* Pods_MyF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF0F075EE1ABDE62C8D9EAF /* Pods_MyF.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,17 +128,23 @@
 		22EBABB0207BD0B2004EEC64 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		22EBABB3207BDB89004EEC64 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
 		22EBABB6207BDC85004EEC64 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
-		22EBABB8207BDF32004EEC64 /* MaxRangeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxRangeRule.swift; sourceTree = "<group>"; };
-		22EBABBA207BE0B9004EEC64 /* MinRangeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinRangeRule.swift; sourceTree = "<group>"; };
+		22EBABB8207BDF32004EEC64 /* RangeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeRule.swift; sourceTree = "<group>"; };
 		22EBABBC207BE0FC004EEC64 /* EmailRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRule.swift; sourceTree = "<group>"; };
 		22EBABBE207BE14E004EEC64 /* RegexRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
 		22EBABC0207BE801004EEC64 /* PassRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassRule.swift; sourceTree = "<group>"; };
 		22EBABC2207BE862004EEC64 /* PhoneRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRule.swift; sourceTree = "<group>"; };
 		22EBABC4207BE903004EEC64 /* FloatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRule.swift; sourceTree = "<group>"; };
-		2F2E63AE208F114F00DDC672 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2F08083620A05D460045FB7E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		2F08083720A05D460045FB7E /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		2F08084020A065680045FB7E /* LoginWithAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAccountView.swift; sourceTree = "<group>"; };
 		2F2E63B1208F115F00DDC672 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2F2E63B4208F138100DDC672 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		2F2E63B7208F184500DDC672 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		2F53D37D20BBBF010014EB1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2F53D38020BBBF590014EB1B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		2F53D38220BBBFEE0014EB1B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2F53D38520BBE4010014EB1B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		2F53D38620BBE4010014EB1B /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		2FA8793A206357A600A048CE /* NSObject+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793C20635C0E00A048CE /* URLSession+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		2FA8793D20635C0E00A048CE /* DataObjectEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObjectEncoder.swift; sourceTree = "<group>"; };
@@ -128,6 +155,21 @@
 		2FA8794220635C0F00A048CE /* FIRBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRBaseModel.swift; sourceTree = "<group>"; };
 		2FA8794C206364A600A048CE /* AppInitializeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializeManager.swift; sourceTree = "<group>"; };
 		2FA879502063832400A048CE /* EventHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHub.swift; sourceTree = "<group>"; };
+		2FD833A520B7EB2E004FDDFD /* FBAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBAuthManager.swift; sourceTree = "<group>"; };
+		2FDE79B520AABA1700522821 /* FirBaseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirBaseAuthentication.swift; sourceTree = "<group>"; };
+		2FDE79B720AABF7B00522821 /* FirCustomTokenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirCustomTokenEntity.swift; sourceTree = "<group>"; };
+		2FDE79B920AAC58200522821 /* FirebaseAuthReposImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthReposImpl.swift; sourceTree = "<group>"; };
+		2FE43A3220A293FF0017B9C5 /* LoginWithAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAccountPresenter.swift; sourceTree = "<group>"; };
+		2FE43A3420A2B35F0017B9C5 /* ZipCodeRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeRule.swift; sourceTree = "<group>"; };
+		2FE43A3620A2B39F0017B9C5 /* FullNameRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameRule.swift; sourceTree = "<group>"; };
+		2FE43A3820A2B4050017B9C5 /* CharacterSetRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetRule.swift; sourceTree = "<group>"; };
+		2FE43A3A20A2E1E30017B9C5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2FE43A3C20A2E20B0017B9C5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2FE43A3E20A2EE290017B9C5 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		2FE43A4020A2FCA70017B9C5 /* LoginCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2FE43A4220A2FCC40017B9C5 /* LoginAccountCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccountCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		2FF4BE3020AA95B3009891AC /* LoginWithAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAccountVC.swift; sourceTree = "<group>"; };
+		2FF4BE3120AA95B3009891AC /* LoginWithAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginWithAccountVC.xib; sourceTree = "<group>"; };
 		7FF0F075EE1ABDE62C8D9EAF /* Pods_MyF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4881B1653B13AC008DD7AB6 /* Pods-MyF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyF/Pods-MyF.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,10 +218,12 @@
 		2233F76320677296006D5579 /* Reponsitory */ = {
 			isa = PBXGroup;
 			children = (
+				2FDE79B420AAB9F000522821 /* Authentication FIR */,
 				222FA6B320681F6700C32BD0 /* Dao */,
 				2233F764206772A4006D5579 /* Api */,
 				2233F76E2067878A006D5579 /* OAuthReposImpl.swift */,
 				22C2B0D9206D58C900694354 /* LoginReposImpl.swift */,
+				2FDE79B920AAC58200522821 /* FirebaseAuthReposImpl.swift */,
 			);
 			path = Reponsitory;
 			sourceTree = "<group>";
@@ -201,6 +245,7 @@
 				2233F76C206786D9006D5579 /* VoidEntity.swift */,
 				226AAA2C20696762008AA6A6 /* FirCustomFokenEntity.swift */,
 				22C2B0D7206D508700694354 /* LoginResultEntity.swift */,
+				2FDE79B720AABF7B00522821 /* FirCustomTokenEntity.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -367,6 +412,7 @@
 		22EBABA6207BCFE2004EEC64 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				2F53D37F20BBBF350014EB1B /* MainView */,
 				2F2E63B3208F126000DDC672 /* Login */,
 				22EBABAD207BD04B004EEC64 /* Base */,
 			);
@@ -376,6 +422,7 @@
 		22EBABA7207BCFEC004EEC64 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F53D37C20BBBEE30014EB1B /* MainView */,
 				2F2E63B0208F115400DDC672 /* Login */,
 				22EBABA8207BCFF7004EEC64 /* Base */,
 			);
@@ -412,20 +459,49 @@
 			isa = PBXGroup;
 			children = (
 				22EBABB6207BDC85004EEC64 /* Rule.swift */,
-				22EBABB8207BDF32004EEC64 /* MaxRangeRule.swift */,
-				22EBABBA207BE0B9004EEC64 /* MinRangeRule.swift */,
+				22EBABB8207BDF32004EEC64 /* RangeRule.swift */,
 				22EBABBC207BE0FC004EEC64 /* EmailRule.swift */,
 				22EBABBE207BE14E004EEC64 /* RegexRule.swift */,
 				22EBABC0207BE801004EEC64 /* PassRule.swift */,
 				22EBABC2207BE862004EEC64 /* PhoneRule.swift */,
 				22EBABC4207BE903004EEC64 /* FloatRule.swift */,
+				2FE43A3420A2B35F0017B9C5 /* ZipCodeRule.swift */,
+				2FE43A3620A2B39F0017B9C5 /* FullNameRule.swift */,
+				2FE43A3820A2B4050017B9C5 /* CharacterSetRule.swift */,
 			);
 			path = Rules;
+			sourceTree = "<group>";
+		};
+		2F04ADB920A2893C00F0EB96 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2FE43A3220A293FF0017B9C5 /* LoginWithAccountPresenter.swift */,
+				2FE43A4220A2FCC40017B9C5 /* LoginAccountCoordinatorProtocol.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2F08083A20A0639E0045FB7E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2FF4BE3020AA95B3009891AC /* LoginWithAccountVC.swift */,
+				2FF4BE3120AA95B3009891AC /* LoginWithAccountVC.xib */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2F08083F20A0654E0045FB7E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2F08084020A065680045FB7E /* LoginWithAccountView.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 		2F2E63AB208F10F500DDC672 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2F53D38420BBE3BB0014EB1B /* MainView */,
 				2F2E63AD208F113F00DDC672 /* Login */,
 				2F2E63AC208F111400DDC672 /* Base */,
 			);
@@ -443,7 +519,9 @@
 		2F2E63AD208F113F00DDC672 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F2E63AE208F114F00DDC672 /* LoginVC.swift */,
+				2F08083A20A0639E0045FB7E /* Account */,
+				2F08083620A05D460045FB7E /* LoginVC.swift */,
+				2F08083720A05D460045FB7E /* LoginVC.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -451,6 +529,7 @@
 		2F2E63B0208F115400DDC672 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2F08083F20A0654E0045FB7E /* Account */,
 				2F2E63B1208F115F00DDC672 /* LoginView.swift */,
 			);
 			path = Login;
@@ -459,7 +538,10 @@
 		2F2E63B3208F126000DDC672 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2F04ADB920A2893C00F0EB96 /* Account */,
 				2F2E63B4208F138100DDC672 /* LoginPresenter.swift */,
+				2FE43A3E20A2EE290017B9C5 /* LoginCoordinator.swift */,
+				2FE43A4020A2FCA70017B9C5 /* LoginCoordinatorProtocol.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -470,6 +552,32 @@
 				2F2E63B7208F184500DDC672 /* LoginUseCase.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		2F53D37C20BBBEE30014EB1B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2F53D37D20BBBF010014EB1B /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		2F53D37F20BBBF350014EB1B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2F53D38020BBBF590014EB1B /* MainPresenter.swift */,
+				2F53D38220BBBFEE0014EB1B /* MainCoordinator.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		2F53D38420BBE3BB0014EB1B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				2F53D38520BBE4010014EB1B /* MainVC.swift */,
+				2F53D38620BBE4010014EB1B /* MainVC.xib */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		2FA8794A206363D600A048CE /* Presentasion */ = {
@@ -487,6 +595,8 @@
 			isa = PBXGroup;
 			children = (
 				2FA8794C206364A600A048CE /* AppInitializeManager.swift */,
+				2FE43A3A20A2E1E30017B9C5 /* AppCoordinator.swift */,
+				2FE43A3C20A2E20B0017B9C5 /* Coordinator.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -494,6 +604,7 @@
 		2FA8794E206382F400A048CE /* Thirdparty */ = {
 			isa = PBXGroup;
 			children = (
+				2FD833A420B7EB12004FDDFD /* FBLoginManager */,
 				2FA8794F2063830C00A048CE /* EventHub */,
 			);
 			path = Thirdparty;
@@ -505,6 +616,22 @@
 				2FA879502063832400A048CE /* EventHub.swift */,
 			);
 			path = EventHub;
+			sourceTree = "<group>";
+		};
+		2FD833A420B7EB12004FDDFD /* FBLoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				2FD833A520B7EB2E004FDDFD /* FBAuthManager.swift */,
+			);
+			path = FBLoginManager;
+			sourceTree = "<group>";
+		};
+		2FDE79B420AAB9F000522821 /* Authentication FIR */ = {
+			isa = PBXGroup;
+			children = (
+				2FDE79B520AABA1700522821 /* FirBaseAuthentication.swift */,
+			);
+			path = "Authentication FIR";
 			sourceTree = "<group>";
 		};
 		32B47246118E4E26EFEE023F /* Frameworks */ = {
@@ -586,9 +713,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F08083920A05D460045FB7E /* LoginVC.xib in Resources */,
 				22DED4FC205976E80056644A /* LaunchScreen.storyboard in Resources */,
 				226AAA29206958F7008AA6A6 /* GoogleService-Info.plist in Resources */,
 				22DED4F9205976E80056644A /* Assets.xcassets in Resources */,
+				2FF4BE3320AA95B3009891AC /* LoginWithAccountVC.xib in Resources */,
+				2F53D38820BBE4010014EB1B /* MainVC.xib in Resources */,
 				22DED4F7205976E80056644A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,9 +732,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyF/Pods-MyF-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -637,12 +770,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyF/Pods-MyF-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -651,12 +789,17 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -674,6 +817,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF4BE3220AA95B3009891AC /* LoginWithAccountVC.swift in Sources */,
 				2233F76B20678635006D5579 /* OAuthTokenEntity.swift in Sources */,
 				22C2B0D8206D508700694354 /* LoginResultEntity.swift in Sources */,
 				2F2E63B8208F184500DDC672 /* LoginUseCase.swift in Sources */,
@@ -681,48 +825,65 @@
 				2233F75420675C77006D5579 /* AppDIContainer.swift in Sources */,
 				2FA8794320635C1000A048CE /* URLSession+Rx.swift in Sources */,
 				22EBABB4207BDB89004EEC64 /* Validatable.swift in Sources */,
-				22EBABBB207BE0B9004EEC64 /* MinRangeRule.swift in Sources */,
 				22449F6B209108D800470A21 /* String+Ex.swift in Sources */,
 				2233F76F2067878A006D5579 /* OAuthReposImpl.swift in Sources */,
 				226AAA3120696FC1008AA6A6 /* API.swift in Sources */,
+				2F53D38720BBE4010014EB1B /* MainVC.swift in Sources */,
+				2FE43A3B20A2E1E30017B9C5 /* AppCoordinator.swift in Sources */,
 				2F2E63B5208F138100DDC672 /* LoginPresenter.swift in Sources */,
 				2FA8794820635C1000A048CE /* FireStore+Rx.swift in Sources */,
 				2FA8793B206357A600A048CE /* NSObject+Rx.swift in Sources */,
 				22DED4F4205976E80056644A /* ViewController.swift in Sources */,
 				2FA8794420635C1000A048CE /* DataObjectEncoder.swift in Sources */,
 				226AAA2B20695F0B008AA6A6 /* Const.swift in Sources */,
+				2FDE79B620AABA1700522821 /* FirBaseAuthentication.swift in Sources */,
+				2FE43A3F20A2EE290017B9C5 /* LoginCoordinator.swift in Sources */,
 				226AAA2D20696762008AA6A6 /* FirCustomFokenEntity.swift in Sources */,
 				22EBABBF207BE14E004EEC64 /* RegexRule.swift in Sources */,
+				2FD833A620B7EB2E004FDDFD /* FBAuthManager.swift in Sources */,
 				2FA8794520635C1000A048CE /* FIRAuth+Rx.swift in Sources */,
+				2FE43A3720A2B39F0017B9C5 /* FullNameRule.swift in Sources */,
 				2233F767206772CD006D5579 /* ApiResult.swift in Sources */,
 				22EBABAA207BD006004EEC64 /* BaseView.swift in Sources */,
 				22C2B0D2206D4C0100694354 /* LoginRepos.swift in Sources */,
 				2233F75F20676CE8006D5579 /* FirStorageUtils.swift in Sources */,
 				2FA879512063832400A048CE /* EventHub.swift in Sources */,
+				2F08084120A065680045FB7E /* LoginWithAccountView.swift in Sources */,
 				22DED4F2205976E80056644A /* AppDelegate.swift in Sources */,
-				2F2E63AF208F114F00DDC672 /* LoginVC.swift in Sources */,
 				22EBABAF207BD05E004EEC64 /* Presenter.swift in Sources */,
+				2FE43A3320A293FF0017B9C5 /* LoginWithAccountPresenter.swift in Sources */,
 				2FA8794720635C1000A048CE /* DataBaseQuery+Rx.swift in Sources */,
 				22EBABAC207BD032004EEC64 /* BaseVC.swift in Sources */,
+				2FE43A3D20A2E20B0017B9C5 /* Coordinator.swift in Sources */,
 				2FA8794920635C1000A048CE /* FIRBaseModel.swift in Sources */,
 				2233F75C20676CE8006D5579 /* AppUtils.swift in Sources */,
 				22DED50C20598E4C0056644A /* AppColor.swift in Sources */,
+				2FDE79B820AABF7B00522821 /* FirCustomTokenEntity.swift in Sources */,
 				222FA6B620681F9100C32BD0 /* RealmDao.swift in Sources */,
 				2233F75E20676CE8006D5579 /* JSONUtils.swift in Sources */,
+				2F53D38320BBBFEE0014EB1B /* MainCoordinator.swift in Sources */,
 				2233F76920678549006D5579 /* AppKey.swift in Sources */,
+				2FE43A4120A2FCA70017B9C5 /* LoginCoordinatorProtocol.swift in Sources */,
+				2F53D37E20BBBF010014EB1B /* MainView.swift in Sources */,
+				2FDE79BA20AAC58200522821 /* FirebaseAuthReposImpl.swift in Sources */,
 				2233F75D20676CE8006D5579 /* DateUtils.swift in Sources */,
 				22C8E376206BEF9500A9DACD /* LoginDao.swift in Sources */,
 				2233F75720675F3C006D5579 /* OAuthRepos.swift in Sources */,
 				22EBABB1207BD0B2004EEC64 /* BasePresenter.swift in Sources */,
-				22EBABB9207BDF32004EEC64 /* MaxRangeRule.swift in Sources */,
+				22EBABB9207BDF32004EEC64 /* RangeRule.swift in Sources */,
+				2FE43A4320A2FCC40017B9C5 /* LoginAccountCoordinatorProtocol.swift in Sources */,
 				2F2E63B2208F115F00DDC672 /* LoginView.swift in Sources */,
 				2FA8794620635C1000A048CE /* FIRBaseRealtime+Rx.swift in Sources */,
 				22EBABC1207BE801004EEC64 /* PassRule.swift in Sources */,
 				226AAA2F2069682B008AA6A6 /* FirebaseAuthRepos.swift in Sources */,
 				22EBABC5207BE903004EEC64 /* FloatRule.swift in Sources */,
 				22EBABBD207BE0FC004EEC64 /* EmailRule.swift in Sources */,
+				2F08083820A05D460045FB7E /* LoginVC.swift in Sources */,
 				22EBABB7207BDC85004EEC64 /* Rule.swift in Sources */,
+				2FE43A3520A2B35F0017B9C5 /* ZipCodeRule.swift in Sources */,
+				2FE43A3920A2B4050017B9C5 /* CharacterSetRule.swift in Sources */,
 				2233F76D206786D9006D5579 /* VoidEntity.swift in Sources */,
+				2F53D38120BBBF590014EB1B /* MainPresenter.swift in Sources */,
 				22EBABC3207BE862004EEC64 /* PhoneRule.swift in Sources */,
 				2FA8794D206364A600A048CE /* AppInitializeManager.swift in Sources */,
 				22C2B0DA206D58C900694354 /* LoginReposImpl.swift in Sources */,

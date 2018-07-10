@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+struct FloatRule: Rule {
+    func validate(_ string: String) -> Bool {
+        let regex = try? NSRegularExpression(pattern: "^[-+]?(\\d*[.])?\\d+$", options: [])
+        if let regex = regex {
+            let match = regex.numberOfMatches(in: string, options: [], range: NSRange(location: 0, length: string.count))
+            return match == 1
+        }
+        return false
+    }
+}

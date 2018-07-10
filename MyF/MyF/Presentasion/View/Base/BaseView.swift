@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BaseView {
+protocol BaseView: AnyObject {
     
 }
 

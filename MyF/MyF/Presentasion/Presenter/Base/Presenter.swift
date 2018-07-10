@@ -8,10 +8,19 @@
 
 import Foundation
 
-protocol Presenter {
-    associatedtype T
+protocol Presenter: class {
+    associatedtype V
+
+    var view: V? { get set }
     
-    func attach(_ view: T)
+    func attach<V: BaseView>(_ view: V)
     
     func detach()
+}
+
+
+extension Presenter {
+    func detach() {
+        view = nil
+    }
 }

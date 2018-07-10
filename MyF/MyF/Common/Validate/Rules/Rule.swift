@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+enum ValidError: Error {
+    case PassWordInvalid
+    case PhoneInvalid
+}
+
+public protocol Rule {
+    func validate(_ string: String) -> Bool
+}

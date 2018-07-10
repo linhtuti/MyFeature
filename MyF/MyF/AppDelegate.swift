@@ -7,21 +7,40 @@
 //
 
 import UIKit
+import GoogleSignIn
+import FirebaseAuth
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    var coordinator: AppCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Intinial AppConfig
-        AppInitializeManager.appInitializeManager.prepare(application)
-        EventHub.addObservation(observer: self, thread: Thread.main) { (hubType:AppInitializeEventType) in
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        //
+        coordinator = AppCoordinator.init(window: window)
+        EventHub.addObservation(observer: self, thread: Thread.background(queue: DispatchQueue.init(label: "initializeApp"))) { (hubType:AppInitializeEventType) in
             if hubType.isSuccess {
-                
+                coordinator?.start()
             }
-         }
+        }
 
+        AppInitializeManager.appInitializeManager.prepare(application)
         return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        if GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication:options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation: [:]) {
+            return true
+        } else if FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: nil) {
+            return true
+        }
+
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -45,7 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

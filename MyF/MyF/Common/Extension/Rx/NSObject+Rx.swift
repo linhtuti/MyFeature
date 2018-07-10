@@ -75,6 +75,14 @@ typealias RepeatPredicate = (Error) -> Bool
 
 extension ObservableType {
     
+    /// retry
+    ///
+    /// - Parameters:
+    ///   - maxAttemts
+    ///   - repeatBehavior: caculator timedelay
+    ///   - shouldRetry: return BOOL and check error, Can be continue
+    ///   - scheduleType:
+    /// - Returns:
     func retry(_ maxAttemts: Int = .max, repeatBehavior: RepeatBehavior, shouldRetry : RepeatPredicate? = nil, scheduleType: SchedulerType = MainScheduler.instance) -> Observable<E> {
         return self.retryWhen { (obserError) -> Observable<Void> in
             return obserError.enumerated().flatMap({ (attemts, error) -> Observable<Void> in

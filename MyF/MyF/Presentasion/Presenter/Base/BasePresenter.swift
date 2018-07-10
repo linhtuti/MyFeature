@@ -8,15 +8,4 @@
 
 import Foundation
 
-class BasePresenter: Presenter {
-    typealias T = BaseView
-    var view: T?
-    
-    func attach(_ view: T) {
-        self.view = view
-    }
-    
-    func detach() {
-        self.view = nil
-    }
-}
+
